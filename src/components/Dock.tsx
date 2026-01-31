@@ -78,7 +78,7 @@ function DockIcon({
   const width = useSpring(widthSync, { mass: 0.1, stiffness: 150, damping: 12 });
 
   return (
-    <Link href={item.href} target={item ? "_blank" : undefined}>
+    <Link href={item.href} >
       <motion.div
         ref={ref}
         style={{ width }}
