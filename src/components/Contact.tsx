@@ -69,28 +69,21 @@ export default function Contact() {
             </p>
 
             <div className="flex flex-col gap-6 mb-12">
-              <a href="mailto:fawazv.business@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
+              
+              
+              <div className="flex items-center gap-4">
+                <a href="mailto:ashuupadhyay0812@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 </div>
-                <span className="text-lg">fawazv.business@gmail.com</span>
+                
               </a>
-              
-              <div className="flex items-center gap-4">
-                 <SocialLink href="https://github.com/fawaz-v" icon={<GithubIcon />} label="GitHub" />
-                 <SocialLink href="https://linkedin.com/in/" icon={<LinkedinIcon />} label="LinkedIn" />
-                 <SocialLink href="https://twitter.com/" icon={<TwitterIcon />} label="Twitter" />
+                 <SocialLink href="https://www.linkedin.com/in/ash1208/" icon={<LinkedinIcon />} label="LinkedIn" />
+                 <SocialLink href="https://wa.link/4svwsn" icon={<WhatsAppIcon/>} label="WhatsApp" />
               </div>
             </div>
 
-            <a 
-              href="/resume.pdf" 
-              download 
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-gray-200 transition-colors transform hover:-translate-y-1"
-            >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-              Download Resume
-            </a>
+            
           </motion.div>
 
           {/* Right Column: Form */}
@@ -159,7 +152,7 @@ export default function Contact() {
         </div>
 
         <footer className="mt-24 pt-8 border-t border-white/5 text-center text-gray-500 font-mono text-sm">
-           <p>&copy; {new Date().getFullYear()} Mohammed Fawaz. All rights reserved.</p>
+           <p>&copy; {new Date().getFullYear()} Ashutosh Upadhyay. All rights reserved.</p>
         </footer>
       </div>
     </section>
@@ -190,3 +183,15 @@ const LinkedinIcon = () => (
 const TwitterIcon = () => (
   <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
 );
+const WhatsAppIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M12 2a10 10 0 0 0-8.66 15.07L2 22l5.06-1.33A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3 .79.8-2.92-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.13-1.47-.73-1.7-.82-.23-.08-.4-.13-.57.13-.17.25-.65.82-.8.99-.15.17-.3.2-.55.07a6.7 6.7 0 0 1-1.98-1.22 7.4 7.4 0 0 1-1.37-1.7c-.14-.25 0-.38.1-.51.1-.1.25-.3.38-.45.12-.14.16-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.38-.78-1.89-.2-.49-.4-.42-.57-.42h-.48c-.17 0-.45.06-.68.32-.23.25-.9.88-.9 2.15s.92 2.5 1.05 2.67c.13.17 1.8 2.75 4.36 3.86.61.27 1.09.43 1.46.55.61.2 1.17.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.3z"/>
+  </svg>
+);
+

@@ -4,34 +4,50 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const TIMELINE_DATA = [
-  {
-    year: "2024 - Present",
-    title: "Full Stack Developer",
-    org: "Freelance & Open Source",
-    description: "Architecting enterprise-scale applications like 'Elite Hotel' (Microservices) and 'Nxtcart' (E-commerce). Expertise in Next.js, Docker, Kubernetes, and Cloud Architecture.",
-    type: "work",
-  },
-  {
-    year: "2023",
-    title: "The Pivot to Tech",
-    org: "Self-Taught Journey",
-    description: "Graduated with a Bachelor of Commerce but discovered a passion for problem-solving. Dedicated 1000+ hours to mastering the MERN stack and software engineering fundamentals.",
-    type: "milestone",
-  },
-  {
-    year: "2020 - 2023",
-    title: "Bachelor of Commerce",
-    org: "Calicut University",
-    description: "Graduated with a specialization in Co-operation. Developed a strong analytical mindset and understanding of business logic.",
-    type: "education",
-  },
-  {
-    year: "2018 - 2020",
-    title: "Computer Applications",
-    org: "GHSS Tirurangadi",
-    description: "Higher Secondary in Commerce with Computer Applications. Early exposure to programming concepts which sparked my initial interest in tech.",
-    type: "education",
-  },
+ {
+  year: "2023 – Present",
+  title: "Senior Web Developer",
+  org: "ABN Junction",
+  description: "Working on real-world frontend and CMS-driven projects for clients across India and Europe. Focused on building responsive, performance-optimized user interfaces using React, Next.js, WordPress, and Shopify, with strong emphasis on Core Web Vitals, UX, and maintainable frontend architecture.",
+  type: "work",
+},
+{
+  year: "2022 – 2023",
+  title: "Senior Associate – Web Development",
+  org: "Walnut Folks Group",
+  description: "Built and optimized frontend-heavy WordPress and Shopify websites. Collaborated closely with designers, improved page speed and responsiveness, implemented SEO-friendly layouts, and mentored junior developers on frontend best practices.",
+  type: "work",
+},
+{
+  year: "2021 – 2022",
+  title: "Marketing Web Developer",
+  org: "Inframantra",
+  description: "Worked on frontend interfaces for marketing platforms and business websites. Contributed to UI development, landing pages, dashboards, and content-driven websites while gaining hands-on experience with real client projects.",
+  type: "work",
+},
+{
+  year: "2024 – 2026",
+  title: "Master of Computer Applications (MCA)",
+  org: "Manipal University",
+  description: "Currently pursuing MCA with a focus on advanced software development concepts, modern web technologies, and scalable application design.",
+  type: "education",
+},
+{
+  year: "2021 – 2024",
+  title: "Bachelor of Computer Applications (BCA)",
+  org: "Chandigarh University",
+  description: "Studied computer science fundamentals including programming, databases, and web technologies. Built a strong foundation that supported my transition into professional frontend and WordPress development.",
+  type: "education",
+},
+
+{
+  year: "Early Journey",
+  title: "Getting Started with Web Development",
+  org: "Self-Driven Learning",
+  description: "Began exploring web development through HTML, CSS, and JavaScript, gradually moving into WordPress, frontend frameworks, and modern UI development through hands-on projects and continuous learning.",
+  type: "milestone",
+},
+
 ];
 
 export default function Timeline() {

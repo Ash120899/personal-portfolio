@@ -5,29 +5,44 @@ import { useState } from "react";
 
 const TESTIMONIALS = [
   {
-    quote: "Fawaz delivered exceptional code on the Elite Hotel project. His understanding of microservices is top-notch.",
-    name: "Alex Morgan",
-    role: "Project Manager, Elite Hotel",
-    initials: "AM",
+    quote: "Ashutosh delivered a clean and fast frontend that matched our brands professional image. Performance and structure were handled excellently.",
+    name: "Mukul P Jain",
+    role: "Redbrick Capital",
+    initials: "MJ",
   },
   {
-    quote: "The Nxtcart platform is blazing fast. Fawaz's optimization skills significantly improved our conversion rates.",
-    name: "Sarah Chen",
-    role: "CTO, Nxtcart",
-    initials: "SC",
+    quote: "The focus on readability, layout clarity and mobile experience made the site significantly more accessible and user-friendly.",
+    name: "Sonali Ghoshal",
+    role: "Founder & Director, Shree Kashi",
+    initials: "SG",
   },
   {
-    quote: "A true professional. He transformed our messy codebase into a clean, scalable architecture.",
-    name: "David Smith",
-    role: "Lead Dev, TechStart",
-    initials: "DS",
+    quote: "The website feels significantly more polished and responsive. The improvements in structure and performance were immediately noticeable.",
+    name: "Josephine Wong",
+    role: "CRO,Videeo.live",
+    initials: "JW",
   },
   {
-    quote: "Incredible attention to detail. The UI animations he implemented made our app feel world-class.",
-    name: "Emily Davis",
-    role: "Product Designer",
-    initials: "ED",
+    quote: "Communication was seamless throughout the project, ensuring all our requirements were met with precision and care. The overall experience was smooth and efficient.",
+    name: "Hitesh Lalwani",
+    role: "CEO, Walnut folks",
+    initials: "HL",
   },
+  {
+    quote: "There was complete ownership of the project from start to nish. The end result exceeded our expectations in every way.",
+    name: "Ansuman Bharali",
+    role: "Co-founder, Woohla Tea",
+    initials: "AB",
+  },
+   {
+    quote: "Ashutosh demonstrated exceptional skill in Woocommerce development & optimization, delivering a website that was not only visually appealing but also highly functional and efficient.",
+    name: "Axel Boehm",
+    role: "CEO & Founder, Taiga Green",
+    initials: "AB",
+  },
+
+ 
+  
 ];
 
 export default function Testimonials() {

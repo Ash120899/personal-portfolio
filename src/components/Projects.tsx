@@ -7,129 +7,169 @@ import { useState } from "react";
 const projects = [
   {
     id: "elite-hotel",
-    title: "Elite Hotel",
-    category: "Full Stack • Microservices",
-    description: "Scalable hotel management system with 5+ Node.js services.",
-    longDescription: "A comprehensive Microservices-based Hotel Management System designed to streamline reservations, billing, and housekeeping. Built with a focus on scalability and service isolation.",
-    techStack: ["Node.js", "Docker", "Kubernetes", "Redis", "RabbitMQ", "Next.js"],
-    repo: "https://github.com/fawazv/Elite-hotel",
-    demo: "#",
+    title: "Woolah Tea",
+    category: "E-Commerce • Shopify",
+    description: "E-commerce tea brand website focused on clean UI, performance, and conversion.",
+    longDescription: "Woolah Tea is a consumer-facing e-commerce website built to present premium tea products through a clean and modern interface. The project emphasized frontend presentation, responsive layouts, optimized product pages, and performance improvements to ensure fast load times and smooth user experience across devices.",
+    techStack: [
+  "Shopify",
+  "Liquid",
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "Theme Customization",
+  "Performance Optimization"
+],
+    demo: "https://woolahtea.com/",
     color: "from-blue-600/20 to-cyan-500/20",
     hoverColor: "group-hover:from-blue-600/40 group-hover:to-cyan-500/40",
     span: "md:col-span-2 md:row-span-2",
     mediaType: "image",
     // Abstract Network/Server for Grid
-    mediaUrl: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    mediaUrl: "/woolah-tea.jpeg",
     // Code/Structure Demo for Modal
-    demoUrl: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    demoUrl: "/woolah-tea-2.jpeg"
   },
   {
     id: "nxtcart",
-    title: "Nxtcart",
-    category: "E-Commerce",
-    description: "Modern shopping platform with automated workflows.",
-    longDescription: "A modern e-commerce application featuring secure authentication, payment processing with Stripe/PayPal, and a robust admin dashboard for product management.",
-    techStack: ["Next.js", "TypeScript", "Stripe", "MongoDB", "Shadcn UI"],
-    repo: "https://github.com/fawazv/nxt-cart",
-    demo: "#",
+    title: "Taiga Green",
+    category: "WooCommerce • Performance",
+    description: "Large-scale WooCommerce storefront focused on performance, UX, and multilingual support.",
+    longDescription: "Taiga Green is a Germany-based WooCommerce store with a large product catalog and multilingual audience. The project involved frontend customization, pagination stability fixes, performance optimization, and improving user experience across category and product pages. Special attention was given to Core Web Vitals, frontend JavaScript behavior, and multilingual compatibility.",
+   techStack: [
+  "WordPress",
+  "WooCommerce",
+  "JavaScript",
+  "PHP",
+  "TranslatePress",
+  "HTML5",
+  "CSS3",
+  "Performance Optimization"
+],
+    repo: null,
+    demo: "https://taiga.green/",
     color: "from-purple-600/20 to-pink-500/20",
     hoverColor: "group-hover:from-purple-600/40 group-hover:to-pink-500/40",
     span: "md:col-span-1 md:row-span-2",
     mediaType: "image",
     // Shopping/Ecommerce Concept
-    mediaUrl: "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    mediaUrl: "/taiga-green.jpeg",
     // Shopping Interaction
-    demoUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    demoUrl: "/taiga-green-2.jpeg"
   },
   {
     id: "dropbox-clone",
-    title: "Dropbox Clone",
-    category: "Cloud Storage",
-    description: "Secure file storage with drag-and-drop & metadata.",
-    longDescription: "A functional clone of Dropbox allowing users to upload, organize, and manage files in the cloud. Features real-time updates and secure authentication.",
-    techStack: ["React", "Firebase", "Tailwind CSS"],
-    repo: "https://github.com/fawazv/dropbox-clone",
-    demo: "#",
+    title: "ABN Junction",
+    category: "WordPress • Optimization",
+    description: "Business-focused WordPress website optimized for performance and responsiveness.",
+    longDescription: "ABN Junction is a corporate WordPress platform where the focus was on frontend stability, responsive layouts, caching integration, and overall performance optimization. The project included UI refinements, Cloudflare integration, and improving load times for better user engagement.",
+    techStack: ["WordPress",
+  "JavaScript",
+  "PHP",
+  "HTML5",
+  "CSS3",
+  "Cloudflare",
+  "Caching Optimization"],
+    repo: null,
+    demo: "https://abnjunction.com/",
     color: "from-orange-500/20 to-red-500/20",
     hoverColor: "group-hover:from-orange-500/40 group-hover:to-red-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
     // Cloud/Data Abstract
-    mediaUrl: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    mediaUrl: "/abn-junction.jpeg",
     // File Management
-    demoUrl: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    demoUrl: "/abn-junction-2.jpeg"
   },
   {
     id: "blog-microservices",
-    title: "Blog Platform",
-    category: "Microservices",
-    description: "Event-driven architecture with RabbitMQ.",
-    longDescription: "Built User, Post, and Comment services with API Gateway and RabbitMQ communication. Containerized with Docker Compose and automated pipeline via GitHub Actions.",
-    techStack: ["Node.js", "RabbitMQ", "Docker"],
-    repo: "https://github.com/fawazv/blog-microservice",
-    demo: "#",
+    title: "Experience India",
+    category: "WordPress • Content Platform",
+    description: "Content-driven website with responsive UI and optimized frontend performance.",
+    longDescription: "Experience India is a content-heavy platform designed to showcase travel and cultural information. The work focused on frontend layout consistency, mobile responsiveness, and improving page load performance while maintaining a clean and readable content structure.",
+    techStack: [ "WordPress",
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "Responsive Design",
+  "Performance Optimization"],
+    repo: null,
+    demo: "https://experienceindia.co.in/",
     color: "from-green-600/20 to-teal-500/20",
     hoverColor: "group-hover:from-green-600/40 group-hover:to-teal-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
-    // Typing/Code Abstract
-    mediaUrl: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        // Typing/Code Abstract
+        mediaUrl: "/experience-india.jpeg",
     // Server/Terminal
-    demoUrl: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    demoUrl: "/experience-india-2.jpeg"
   },
   {
     id: "bookstore-app",
-    title: "Bookstore",
-    category: "MERN Stack",
-    description: "Book management with separate Frontend/Backend.",
-    longDescription: "Built RESTful APIs with Express.js and MongoDB for complete book management (CRUD). Developed a responsive React frontend integrated with Axios.",
-    techStack: ["MongoDB", "Express", "React"],
-    repo: "https://github.com/fawazv/bookstoreapp",
-    demo: "#",
+    title: "AuraSense Beauty",
+    category: "Frontend • Shopify",
+    description: "Beauty e-commerce website with optimized product UI and navigation flow.",
+    longDescription: "AuraSense Beauty is a WooCommerce-based beauty brand website focused on structured layouts, optimized product pages, and smooth customer navigation. The project aimed to improve frontend usability and performance while maintaining a visually appealing interface.",
+    techStack: [ "WordPress",
+  "WooCommerce",
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "Performance Optimization"],
+    repo: null,
+    demo: "https://aurasensebeauty.com/",
     color: "from-indigo-600/20 to-purple-500/20",
     hoverColor: "group-hover:from-indigo-600/40 group-hover:to-purple-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
     // Reading/Books
-    mediaUrl: "https://images.pexels.com/photos/207636/pexels-photo-207636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    mediaUrl: "/aura-sense.jpeg",
     // Library/Shelf
-    demoUrl: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    demoUrl: "/aura-sense-2.jpeg"
   },
   {
     id: "pixabay-gallery",
-    title: "Pixabay Gallery",
-    category: "API Integration",
-    description: "Image search gallery using Pixabay API.",
-    longDescription: "Implemented image search and responsive grid gallery using React, Tailwind CSS, and Axios. Integrated Pixabay API for fetching images.",
-    techStack: ["React", "Vite", "Tailwind"],
-    repo: "https://github.com/fawazv/1.-react-tailwind-pixabay-gallery",
-    demo: "#",
+    title: "Videeo",
+    category: "Frontend • WordPress",
+    description: "Landing and platform pages with performance-focused frontend implementation.",
+    longDescription: "Videeo is a platform-oriented website where frontend work focused on layout clarity, responsive UI components, and optimized rendering for improved performance and user interaction.",
+    techStack: [ "WordPress",
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "Performance Optimization"],
+    repo: null,
+    demo: "https://www.videeo.live/",
     color: "from-pink-600/20 to-rose-500/20",
     hoverColor: "group-hover:from-pink-600/40 group-hover:to-rose-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
     // Color/Art
-    mediaUrl: "https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    mediaUrl: "/videeo.jpeg",
     // Searching/Scanning
-    demoUrl: "https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    demoUrl: "/videeo-2.jpeg"
   },
   {
     id: "room-upload",
-    title: "Room Upload",
-    category: "Cloudinary",
-    description: "Secure image upload service details.",
-    longDescription: "Built secure image upload flow using Express, Multer, and Cloudinary SDK with TypeScript backend. Developed responsive React + Vite frontend.",
-    techStack: ["React", "Multer", "Cloudinary"],
-    repo: "https://github.com/fawazv/multer-cloudinary",
-    demo: "#",
+    title: "UnicMinds",
+    category: " Edtech • Corporate Platform",
+    description: "Professional business website with clean UI and mobile-first approach.",
+    longDescription: "UnicMinds is a corporate website built with a mobile-first mindset, focusing on frontend structure, readability, and consistent user experience across devices.",
+    techStack: ["WordPress",
+  "JavaScript",
+  "HTML5",
+  "CSS3",
+  "Mobile Optimization"],
+    repo: null,
+    demo: "https://unicminds.com/",
     color: "from-yellow-600/20 to-orange-500/20",
     hoverColor: "group-hover:from-yellow-600/40 group-hover:to-orange-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
     // Data Transfer
-    mediaUrl: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    mediaUrl: "/unic-minds.jpeg",
     // Upload/Processing
-    demoUrl: "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    demoUrl: "/unic-minds-2.jpeg                                    "
   },
 ];
 
@@ -162,8 +202,7 @@ export default function Projects() {
             Selected <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Works</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-             A curated selection of projects demonstrating full-stack capabilities, 
-             microservices architecture, and modern interface design.
+            A curated selection of frontend-focused projects showcasing React, Next.js, CMS Platforms, and performance-driven UI development.
           </p>
         </motion.div>
 
@@ -353,22 +392,14 @@ export default function Projects() {
                                         </div>
 
                                         <div className="flex gap-4 pt-4 border-t border-white/10">
-                                            <a 
-                                                href={selectedProject.repo} 
-                                                target="_blank" 
-                                                rel="noopener noreferrer" 
-                                                className="flex-1 py-4 rounded-xl bg-white text-black font-bold text-center hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
-                                            >
-                                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                                View Code
-                                            </a>
+                                         
                                             <a 
                                                 href={selectedProject.demo} 
                                                 target="_blank" 
                                                 rel="noopener noreferrer" 
                                                 className="flex-1 py-4 rounded-xl bg-white/5 text-white font-bold text-center hover:bg-white/10 transition-colors border border-white/10 flex items-center justify-center gap-2"
                                             >
-                                                Live Demo
+                                                Visit Live Website
                                                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                                             </a>
                                         </div>
